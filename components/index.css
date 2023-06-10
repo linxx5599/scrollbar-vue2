@@ -1,0 +1,76 @@
+html {
+  --text-color-secondary: #909399;
+}
+.scrollbar {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  --scrollbar-opacity: 0.3;
+  --scrollbar-bg-color: var(--text-color-secondary);
+  --scrollbar-hover-opacity: 0.5;
+  --scrollbar-hover-bg-color: var(--text-color-secondary);
+}
+.scrollbar .scrollbar-wrap-hidden-default {
+  scrollbar-width: none;
+}
+.scrollbar .scrollbar-wrap {
+  overflow: auto;
+  height: 100%;
+}
+.scrollbar .scrollbar-wrap::-webkit-scrollbar {
+  display: none;
+}
+/* .scrollbar .scrollbar-wrap::-webkit-scrollbar-thumb {
+  color: transparent;
+  background: transparent;
+} */
+.scrollbar .scrollbar-bar {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  z-index: 1;
+  border-radius: 4px;
+}
+.scrollbar .scrollbar-bar.is-horizontal {
+  height: 6px;
+  left: 2px;
+}
+.scrollbar .scrollbar-bar.is-horizontal > div {
+  height: 100%;
+}
+.scrollbar .scrollbar-bar.is-vertical {
+  width: 6px;
+  top: 2px;
+}
+.scrollbar .scrollbar-bar.is-vertical > div {
+  width: 100%;
+}
+.scrollbar .scrollbar-bar .scrollbar-thumb {
+  position: relative;
+  display: block;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  border-radius: inherit;
+  background-color: var(--scrollbar-bg-color, var(--text-color-secondary));
+  transition: var(--transition-duration) background-color;
+  opacity: var(--scrollbar-opacity, 0.3);
+}
+
+.scrollbar .scrollbar-bar .scrollbar-thumb:hover {
+  background-color: var(
+    --scrollbar-hover-bg-color,
+    var(--text-color-secondary)
+  );
+  opacity: var(--scrollbar-hover-opacity, 0.5);
+}
+.scrollbar .scrollbar-fade-enter-active {
+  transition: opacity 340ms ease-out;
+}
+.scrollbar .scrollbar-fade-leave-active {
+  transition: opacity 120ms ease-out;
+}
+.scrollbar .scrollbar-fade-enter,
+.scrollbar-fade-enter-leave-to {
+  opacity: 0;
+}
