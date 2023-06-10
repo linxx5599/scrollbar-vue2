@@ -9,6 +9,10 @@
   "files": [
     "lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linxx5599/scrollbar-vue2.git"
+  },
   "keywords": [],
   "author": "linjy",
   "license": "ISC",
