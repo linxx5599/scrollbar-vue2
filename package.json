@@ -7,7 +7,7 @@
     "dev": "webpack serve"
   },
   "files": [
-    "lib"
+    "components"
   ],
   "repository": {
     "type": "git",
