@@ -23,7 +23,6 @@
   </div>
 </template>
 <script>
-import "./index.css"
 import { GAP, scrollbarContextKey } from "./constants";
 import { addUnit, isNumber, isObject } from "../utils/index.js"
 import Bar from "./bar.vue";

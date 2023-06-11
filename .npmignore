@@ -10,6 +10,7 @@ CVS
 npm-debug.log
 .npmrc
 src
+public
 webpack.config.js
 node_modules
 config.gypi
