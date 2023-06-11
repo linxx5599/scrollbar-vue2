@@ -9,6 +9,9 @@ CVS
 ._*
 npm-debug.log
 .npmrc
+.browserslistrc
+babel.config.js
+postcss.config.js
 src
 public
 webpack.config.js
