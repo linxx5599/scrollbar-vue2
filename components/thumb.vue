@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { ComError, isClient } from "../utils/index.js";
+import { ComError, isClient } from "./utils/index.js";
 import { scrollbarContextKey } from "./constants";
 function throwError(scope, m) {
   throw new ComError(`[${scope}] ${m}`);

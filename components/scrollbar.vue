@@ -24,7 +24,7 @@
 </template>
 <script>
 import { GAP, scrollbarContextKey } from "./constants";
-import { addUnit, isNumber, isObject } from "../utils/index.js"
+import { addUnit, isNumber, isObject } from "./utils/index.js"
 import Bar from "./bar.vue";
 const COMPONENT_NAME = "Scrollbar";
 export default {

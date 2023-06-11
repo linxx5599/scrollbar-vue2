@@ -1,6 +1,6 @@
 {
   "name": "scrollbar-vue2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "这个人很懒什么也没有",
   "main": "components/index.js",
   "scripts": {
